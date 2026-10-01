@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Reply Translator",
+    "description": "Adds a Translate button to every AI reply segment (not the chain of thought); translates it with a model configured under Settings → Models and shows the result below the original."
+  }
+}

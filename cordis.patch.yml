@@ -1,0 +1,10 @@
+# dsh-translator bundle patch.
+#
+# Inserts one dual-face plugin row: the Host half (exports ".") keeps the
+# translator settings in ~/.dsh/dsh-translator.json, lists the configured
+# models and runs translations through the `llm` service behind the
+# /api/dsh-translator routes; the Browser half (exports "./client") adds the
+# Settings section and the per-segment Translate buttons in the chat.
+- insert:
+    - id: translator
+      name: '@mikulo/dsh-translator'

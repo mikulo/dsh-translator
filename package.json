@@ -1,0 +1,68 @@
+{
+  "name": "@mikulo/dsh-translator",
+  "version": "1.0.0",
+  "description": "在 AI 每段回复（不含思维链）旁增加翻译按钮，用 设置 → 模型 中已配置的模型翻译成所选语言，译文显示在原文下方。Translate DSH AI replies segment by segment with your configured models.",
+  "type": "module",
+  "license": "MIT",
+  "author": "mikulo",
+  "icon": "./icon.svg",
+  "homepage": "https://github.com/mikulo/dsh-translator#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mikulo/dsh-translator.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mikulo/dsh-translator/issues"
+  },
+  "engines": {
+    "node": ">=22.19.0",
+    "dsh": ">=0.1.7-rc.1"
+  },
+  "main": "./lib/index.js",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "test": "node scripts/build.mjs --check && node test/smoke-host.mjs && node test/smoke-client.mjs && node test/smoke-client-dom.mjs"
+  },
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json",
+    "./locale/*.json": "./locale/*.json"
+  },
+  "files": [
+    "lib/index.js",
+    "lib/client.js",
+    "src",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "README.md",
+    "LICENSE"
+  ],
+  "dsh": {
+    "manifestVersion": 1,
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-locale",
+        "@deepseek-ai/dsh-client-ui-settings",
+        "@deepseek-ai/dsh-client-ui-layout",
+        "@deepseek-ai/dsh-client-ui-chat",
+        "@deepseek-ai/dsh-client-ui-primitives"
+      ]
+    }
+  },
+  "keywords": [
+    "dsh",
+    "deepseek-harness",
+    "dsh-plugin",
+    "plugin",
+    "translate",
+    "translation",
+    "i18n"
+  ]
+}
