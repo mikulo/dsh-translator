@@ -3,8 +3,8 @@
  *
  * 1. Settings → "回复翻译" section: translation model (the models configured
  *    under Settings → Models, fetched live from the Host), reasoning effort
- *    (off by default; low / medium / high), target language (the ten most
- *    spoken languages, Chinese by default), prompt template with `{{target}}`
+ *    (off by default; low / medium / high), target language (ten commonly
+ *    used languages, Chinese by default), prompt template with `{{target}}`
  *    and `{{text}}`, timeout, a button filter and a "测试翻译" probe.
  * 2. A translate bar under every settled assistant text segment (never the
  *    reasoning / chain of thought). The bar sits right-aligned in normal

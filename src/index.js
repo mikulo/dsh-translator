@@ -58,21 +58,20 @@ export const DEFAULT_TIMEOUT_SEC = 60
 export const EFFORTS = ['off', 'low', 'medium', 'high']
 
 /**
- * The ten most widely spoken languages (total speakers, Ethnologue), Chinese
- * first because it is the default target. `prompt` is what `{{target}}`
- * becomes in the prompt template.
+ * Ten commonly used translation targets, Chinese first because it is the
+ * default target. `prompt` is what `{{target}}` becomes in the prompt template.
  */
 export const LANGUAGES = [
   { code: 'zh-CN', label: '简体中文', prompt: '简体中文（Simplified Chinese）' },
   { code: 'en', label: 'English', prompt: 'English' },
-  { code: 'hi', label: 'हिन्दी (Hindi)', prompt: 'हिन्दी (Hindi)' },
-  { code: 'es', label: 'Español (Spanish)', prompt: 'Español (Spanish)' },
+  { code: 'zh-TW', label: '繁體中文 (Traditional Chinese)', prompt: '繁體中文（Traditional Chinese）' },
+  { code: 'ja', label: '日本語 (Japanese)', prompt: '日本語 (Japanese)' },
+  { code: 'ko', label: '한국어 (Korean)', prompt: '한국어 (Korean)' },
   { code: 'fr', label: 'Français (French)', prompt: 'Français (French)' },
-  { code: 'ar', label: 'العربية (Arabic)', prompt: 'العربية (Arabic)' },
-  { code: 'bn', label: 'বাংলা (Bengali)', prompt: 'বাংলা (Bengali)' },
-  { code: 'pt', label: 'Português (Portuguese)', prompt: 'Português (Portuguese)' },
+  { code: 'es', label: 'Español (Spanish)', prompt: 'Español (Spanish)' },
+  { code: 'de', label: 'Deutsch (German)', prompt: 'Deutsch (German)' },
   { code: 'ru', label: 'Русский (Russian)', prompt: 'Русский (Russian)' },
-  { code: 'ur', label: 'اردو (Urdu)', prompt: 'اردو (Urdu)' },
+  { code: 'pt', label: 'Português (Portuguese)', prompt: 'Português (Portuguese)' },
 ]
 export const DEFAULT_TARGET = 'zh-CN'
 

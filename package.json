@@ -1,6 +1,6 @@
 {
   "name": "@mikulo/dsh-translator",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "在 AI 每段回复（不含思维链）旁增加翻译按钮，用 设置 → 模型 中已配置的模型翻译成所选语言，译文显示在原文下方。Translate DSH AI replies segment by segment with your configured models.",
   "type": "module",
   "license": "MIT",
